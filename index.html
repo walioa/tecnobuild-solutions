@@ -7,110 +7,158 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
   <!-- ENCABEZADO -->
-  <header class="text-center p-3" style="background-color: #0A2239;">
-    <h1 class="tituloGrande">TecnoBuild Solutions</h1>
-    <p class="slogan">Innovación en Tecnología a tu Alcance</p>
-    <nav class="mt-2">
-      <a href="#inicio" class="btn btn-outline-light btn-sm m-1">Inicio</a>
-      <a href="#productos" class="btn btn-outline-light btn-sm m-1">Productos</a>
+  <header class="text-white text-center py-4" style="background-color: #0A2239;">
+    <h1 class="fw-bold" style="font-family: 'Montserrat', sans-serif;">TecnoBuild Solutions</h1>
+    <p class="fst-italic">Innovación en Tecnología a tu Alcance</p>
+    <nav>
+      <a href="#nosotros" class="btn btn-outline-light btn-sm m-1">Nosotros</a>
+      <a href="#ubicacion" class="btn btn-outline-light btn-sm m-1">Ubicación</a>
+      <a href="#catalogo" class="btn btn-outline-light btn-sm m-1">Catálogo</a>
       <a href="#contacto" class="btn btn-outline-light btn-sm m-1">Contacto</a>
     </nav>
   </header>
 
-  <main class="container mt-4">
+  <main class="container mt-4 mb-5">
 
-    <!-- INICIO -->
-    <section id="inicio">
-      <h2 class="subtitulo">Bienvenido</h2>
-      <p class="texto1">Gracias por visitar nuestra página. En TecnoBuild Solutions vendemos productos tecnológicos de calidad y con precios accesibles. Nos especializamos en accesorios para celulares, computadoras y más.</p>
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="mb-5">
+      <h2 class="seccion-titulo text-center">¿Quiénes somos?</h2>
+      <p class="text-center seccion-texto">
+        En <strong>TecnoBuild Solutions</strong>, nos dedicamos a la comercialización de accesorios tecnológicos que mejoran la experiencia del usuario moderno. Desde nuestros inicios, nos hemos enfocado en ofrecer productos de calidad, con diseños actualizados y precios accesibles. Nuestro objetivo es ser más que una tienda: queremos ser tu aliado en tecnología, brindándote soluciones prácticas para tu día a día. Ya sea que necesites proteger tu celular, mejorar tu escritorio gamer o simplemente actualizar tus gadgets, aquí encontrarás una opción ideal para ti.
+      </p>
     </section>
 
-    <!-- PRODUCTOS -->
-    <section id="productos" class="mt-4">
-      <h2 class="subtitulo">Productos Destacados</h2>
-      <div class="row">
+    <!-- UBICACIÓN -->
+    <section id="ubicacion" class="mb-5">
+      <h2 class="seccion-titulo text-center">Ubicación</h2>
+      <p class="text-center seccion-texto">
+        Nuestra tienda se encuentra ubicada en una zona accesible de La Molina, ideal para quienes buscan productos tecnológicos sin tener que desplazarse lejos. Si estás en Lima, puedes visitarnos en:
+      </p>
+      <p class="text-center fw-bold">📍 Calle Los Cipreses 123, La Molina - Lima</p>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.google.com/maps?q=La+Molina,+Lima,+Peru&output=embed" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
 
-        <!-- Producto 1 -->
-        <div class="col-md-4 mb-3 efectoCard">
-          <img src="img/audifono.jpg" alt="Audífonos" class="img-fluid rounded">
-          <p class="texto1">Audífonos Bluetooth con buena calidad de sonido, perfectos para llamadas y música.</p>
+    <!-- CATÁLOGO -->
+    <section id="catalogo" class="mb-5">
+      <h2 class="seccion-titulo text-center">Catálogo de Productos</h2>
+      <p class="text-center seccion-texto">
+        A continuación te mostramos algunos de nuestros productos más populares. Todos los accesorios que ves aquí han sido seleccionados por su funcionalidad, durabilidad y estética moderna. Contamos con stock limitado y variedad de modelos. Si te interesa algún artículo, recuerda que también puedes escribirnos por WhatsApp para más información o para consultar disponibilidad.
+      </p>
+      <div class="row row-cols-1 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/audifono.jpg" class="producto-img card-img-top" alt="Audífonos">
+            <div class="card-body">
+              <h5 class="card-title">Audífonos Bluetooth</h5>
+              <p class="card-text">S/ 120.00 <span class="text-muted text-decoration-line-through">S/ 150.00</span></p>
+              <p class="small">Conexión rápida, sonido HD, batería de larga duración.</p>
+            </div>
+          </div>
         </div>
 
-        <!-- Producto 2 -->
-        <div class="col-md-4 mb-3 efectoCard">
-          <img src="img/carcasa.jpg" alt="Carcasas" class="img-fluid rounded">
-          <p class="texto1">Carcasas resistentes y modernas. Diferentes diseños para cada modelo de celular.</p>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/carcasa.jpg" class="producto-img card-img-top" alt="Carcasa">
+            <div class="card-body">
+              <h5 class="card-title">Carcasa Protectora</h5>
+              <p class="card-text">S/ 30.00</p>
+              <p class="small">Diseños modernos para varios modelos de celular.</p>
+            </div>
+          </div>
         </div>
 
-        <!-- Producto 3 -->
-        <div class="col-md-4 mb-3 efectoCard">
-          <img src="img/mica.jpg" alt="Micas" class="img-fluid rounded">
-          <p class="texto1">Micas templadas de alta resistencia para proteger tu pantalla de rayones y caídas.</p>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/mica.jpg" class="producto-img card-img-top" alt="Mica">
+            <div class="card-body">
+              <h5 class="card-title">Mica Templada</h5>
+              <p class="card-text">S/ 15.00</p>
+              <p class="small">Protección antirayaduras y golpes.</p>
+            </div>
+          </div>
         </div>
-
       </div>
 
-      <!-- BOTÓN VER MÁS -->
-      <div class="text-center mb-3">
-        <button class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#productosExtra">
-          Ver más
-        </button>
+      <!-- VER MÁS -->
+      <div class="text-center mt-4">
+        <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#verMas">Ver más</button>
       </div>
 
-      <!-- PRODUCTOS OCULTOS -->
-      <div class="collapse" id="productosExtra">
-        <div class="row">
-
-          <!-- Producto 4 -->
-          <div class="col-md-4 mb-3 efectoCard">
-            <img src="img/teclado.jpg" alt="Teclado" class="img-fluid rounded">
-            <p class="texto1">Teclado USB con diseño cómodo, ideal para oficina, estudio o gaming básico.</p>
+      <div id="verMas" class="collapse mt-4">
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/teclado.jpg" class="producto-img card-img-top" alt="Teclado">
+              <div class="card-body">
+                <h5 class="card-title">Teclado USB</h5>
+                <p class="card-text">S/ 45.00</p>
+                <p class="small">Cómodo, silencioso y resistente.</p>
+              </div>
+            </div>
           </div>
 
-          <!-- Producto 5 -->
-          <div class="col-md-4 mb-3 efectoCard">
-            <img src="img/mouse.jpg" alt="Mouse" class="img-fluid rounded">
-            <p class="texto1">Mouse ergonómico con cable o inalámbrico. Práctico y ligero para todo tipo de uso.</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/mouse.jpg" class="producto-img card-img-top" alt="Mouse">
+              <div class="card-body">
+                <h5 class="card-title">Mouse Inalámbrico</h5>
+                <p class="card-text">S/ 35.00</p>
+                <p class="small">Con sensor óptico de alta precisión.</p>
+              </div>
+            </div>
           </div>
 
-          <!-- Producto 6 -->
-          <div class="col-md-4 mb-3 efectoCard">
-            <img src="img/soporte.jpg" alt="Soporte" class="img-fluid rounded">
-            <p class="texto1">Soporte ajustable para celular. Ideal para escritorio, videollamadas o auto.</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/soporte.jpg" class="producto-img card-img-top" alt="Soporte">
+              <div class="card-body">
+                <h5 class="card-title">Soporte para Celular</h5>
+                <p class="card-text">S/ 25.00</p>
+                <p class="small">Ideal para escritorios, ángulo ajustable.</p>
+              </div>
+            </div>
           </div>
-
         </div>
       </div>
     </section>
 
     <!-- CONTACTO -->
-    <section id="contacto" class="mt-4">
-      <h2 class="subtitulo text-center">Contáctanos</h2>
+    <section id="contacto">
+      <h2 class="seccion-titulo text-center">Contáctanos</h2>
+      <p class="text-center seccion-texto">
+        Si tienes alguna duda, necesitas un producto en especial, o deseas hacer un pedido personalizado, no dudes en escribirnos. Puedes usar el formulario o mandarnos un mensaje directo por WhatsApp. Atendemos de lunes a sábado, y estamos listos para ayudarte lo más rápido posible.
+      </p>
       <div class="row justify-content-center">
         <div class="col-md-6">
           <form>
-            <div class="mb-2">
-              <label for="nombre" class="form-label">Nombre:</label>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="nombre" required>
             </div>
-            <div class="mb-2">
-              <label for="email" class="form-label">Correo:</label>
-              <input type="email" class="form-control" id="email" required>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="correo" required>
             </div>
-            <div class="mb-2">
-              <label for="mensaje" class="form-label">Mensaje:</label>
-              <textarea id="mensaje" class="form-control" rows="3" required></textarea>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje o pedido</label>
+              <textarea class="form-control" id="mensaje" rows="3" required></textarea>
             </div>
             <div class="text-center">
-              <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+              <a href="https://wa.me/51902557102" target="_blank" class="btn btn-success ms-2">WhatsApp</a>
             </div>
           </form>
         </div>
@@ -119,13 +167,12 @@
 
   </main>
 
-  <!-- PIE -->
-  <footer class="text-center p-2 mt-4" style="background-color: #F8F8F8;">
-    <small>&copy; 2025 TecnoBuild Solutions - Todos los derechos reservados</small>
+  <!-- PIE DE PÁGINA -->
+  <footer class="text-center text-white py-3" style="background-color: #0A2239;">
+    <small>&copy; 2025 TecnoBuild Solutions — Todos los derechos reservados</small>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
