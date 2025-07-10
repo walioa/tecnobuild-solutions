@@ -1,83 +1,102 @@
 body {
-  font-family: 'Lato', sans-serif;
-  background-color: #FFFFFF;
-  color: #333;
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   margin: 0;
+  padding: 0;
+  color: #222;
 }
 
-/* ENCABEZADO */
-.tituloGrande {
+.seccion-titulo {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  color: #ffffff;
-  animation: aparecerTitulo 1.5s ease-in-out;
-}
-
-.slogan {
-  color: #E67E22;
-  font-size: 1rem;
-  font-style: italic;
-}
-
-/* SUBTÍTULOS */
-.subtitulo {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
   color: #0A2239;
-  animation: aparecerTexto 1.2s ease-in;
+  text-transform: uppercase;
 }
 
-/* TEXTO */
-.texto1 {
-  font-size: 1rem;
-  animation: textoMov 1s ease-in-out;
+.seccion-texto {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* PRODUCTOS */
-.efectoCard {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 10px;
-  transition: transform 0.3s;
-  animation: fadeInCard 1.5s ease;
-}
-
-.efectoCard:hover {
-  transform: scale(1.05);
-  border-color: #E67E22;
-}
-
-/* FORMULARIO */
-input:focus, textarea:focus {
-  border-color: #E67E22;
-  box-shadow: 0 0 5px #E67E22;
-  transition: 0.3s;
-}
-
-/* ANIMACIONES */
-@keyframes aparecerTitulo {
-  0% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes aparecerTexto {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes textoMov {
-  from { transform: translateX(-10px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes fadeInCard {
-  from { opacity: 0; transform: scale(0.8); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-.efectoCard img {
-  width: 100%;
+.producto-img {
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #0A2239;
+}
+
+.card-text {
+  font-weight: bold;
+  color: #E67E22;
+}
+
+form label {
+  font-weight: 600;
+  color: #0A2239;
+}
+
+form input,
+form textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #0A2239;
+  box-shadow: 0 0 5px rgba(10, 34, 57, 0.4);
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-primary {
+  border-color: #0A2239;
+  color: #0A2239;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0A2239;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #25D366;
+  border-color: #25D366;
+}
+
+footer {
+  background-color: #0A2239;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .producto-img {
+    height: 180px;
+  }
+
+  .seccion-texto {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
 }
